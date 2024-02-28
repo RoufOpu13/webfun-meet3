@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 3</title>
+    <style>
+        table,td,th {
+            border-collapse: collapse;
+            border: 1px solid;
+
+        /* Latihan Tabel */
+        }
+        .nilai {
+            text-align: center;
+        }
+
+        /* DIV */
+        .container {
+            display: flex;
+        }
+        .column {
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        /* Latihan DIV */
+        .rangka {
+            display: flex;
+        }
+        .isi {
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TABEL MARGE CELL</h1>
+    <table>
+        <thead>
+            <tr>
+                    <!--ROWSPAN = MENYATUKAN BARIS ATAS DAN BAWAH-->
+                <th rowspan="2" >No</th>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">Kelas</th>
+                <th colspan="3">TUGAS</th>
+                    <!-- COLSPAN = MENYATUKAN BARIS KIRI DAN KANAN -->
+            </tr>
+            <tr>
+                <th>T1</th>
+                <th>T2</th>
+                <th>T3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Muhammad Abdur Rouf</td>
+                <td>MI23B</td>
+                <td>Membuat Makalah</td>
+                <td>Membuat Proposal</td>
+                <td>Presentasi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Muhmamad Khalil Ardani</td>
+                <td rowspan="3">AB17</td>
+                <td>Presentasi</td>
+                <td>Membuat Makalah</td>
+                <td>Membuat Proposal</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Arfan Algibrani</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Shandi Febriansyah</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rizky Firdaus/</td>
+                <td>MKP04</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h1>LATIHAN TABEL</h1>
+    <table>
+        <Thead>
+            <tr>
+                <th>Kelas</th>
+                <th>Murid</th>
+                <th>Nilai</th>
+            </tr>
+        </Thead>
+        <tbody class="nilai">
+            <tr>
+                <td rowspan="5">A</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>87</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>DIV</h1>
+    <div class="container">
+        <div class="column" style="background-color: white;">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint.</div>
+        <div class="column" style="background-color: red;color:wheat;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum!</div>
+        <div class="column" style="background-color: blue;color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam.</div>
+    </div>
+
+    <h1>LATIHAN DIV</h1>
+    <div class="rangka">
+        <div class="isi" style="background-color: green;color: aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, mollitia.</div>
+        <div class="isi" style="background-color:yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quidem?</div>
+        <div class="isi" style="background-color: blue; color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, blanditiis.</div>
+    </div>
+</body>
+</html>
